@@ -25,6 +25,8 @@ package Assignment3 {
     val listLength = println("length of the list is :" + obj.listLength(list2))
     //val listReverse= println("length of the list" + obj.listReverse(list2))
 
+    val listReverse = println("reverse of a list is :" + obj.listReverse(list1))
+
 
   }
 
@@ -65,11 +67,9 @@ package Assignment3 {
 
     /*
         def kthElement(number: Int, list: List[Int]): Int = {
-      def nthRecursive[A](n: Int, ls: List[A]): A = (n, ls) match {
-        case (0, h :: _)               => h
-        case (number, _ :: tail) if (n > 0) => kthElement(number - 1, tail)
-        case (_, _)                    => throw new IndexOutOfBoundsException
-    }
+      def nthRecursive(n: Int, list: List[Int]): A = (n, ls) match {
+      case
+
 
         }*/
 
@@ -85,21 +85,14 @@ package Assignment3 {
 
     }
 
-    /*
 
-       def listReverse(list: List[Int]): Int = {
-         def recursive(result: List[Int], demo: List[Int]): List[Int] = {
-           demo match {
-             case Nil => result
-             case (x :: xs) => {
-               recursive(x :: result, xs)
-             }
+
+       def listReverse(list: List[Int]): Unit = {
+         for(i <-list.length to 1 by-1)
+           {
+             println(list(i))
            }
-         }
-
-         recursive(Nil, list)
        }
-       */
   }
 
 }
